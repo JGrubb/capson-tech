@@ -1,0 +1,88 @@
+h1, h2, h3
+  font-family: latoregular
+  font-weight: normal
+  line-height: 1.2
+
+h1
+  margin: 0 .5em
+  padding: .3em
+  background: url(../img/logo.png) center center no-repeat
+  background-size: contain
+  max-width: 40%
+  text-indent: 150%
+  color: transparent
+  height: 55px
+  width: 225px
+
+h2
+  color: $header
+  font-size: 1.6em
+  &.section-header
+    text-align: center
+
+h3
+  color: $subhead
+
+p
+  color: $copy
+  font-family: latolight
+  font-weight: normal
+  font-size: 1.2em
+  line-height: 1.5
+
+.no-mobile
+  display: none
+
+.wrapper
+  padding: 0 1em
+
+header
+  background: $header_bg
+  overflow: hidden
+  position: fixed
+  z-index: 1
+  width: 100%
+  top: 0
+  border-bottom: 1px solid #d8d8d8
+
+#main-nav
+  max-height: 0
+  overflow: hidden
+  transition: max-height .25s
+  &.active
+    max-height: 18em
+  ul
+    padding: 0
+    margin: 0
+  li
+    border-bottom: 1px solid #d8d8d8
+    &:first-child
+      border-top: 1px solid #d8d8d8
+    a
+      padding: 1em
+      display: block
+      color: #444
+      text-decoration: none
+
+#trigger
+  display: inline-block
+  float: right
+  background: rgba(#999, .1) url(../img/trigger-drk.png) center center no-repeat
+  position: absolute
+  top: .75em
+  right: 1em
+  z-index: 2
+  //text-indent: -200%
+  overflow: hidden
+  color: transparent
+  padding: .75em .4em
+  border-radius: .2em
+  border: 1px solid #d8d8d8
+
+#intro
+  margin-top: 4.5em
+  background: url(../img/bg-intro-sm.jpg) center center no-repeat
+  background-size: cover
+  h2, p
+    color: white
+  padding: 1em 0
