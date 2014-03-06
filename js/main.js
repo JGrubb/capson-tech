@@ -8,3 +8,6 @@ $('#main-nav').on('click touchstart', 'li a', function() {
 });
 
 smoothScroll.init();
+
+$.stellar({
+});

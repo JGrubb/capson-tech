@@ -38,7 +38,8 @@ h2.section-header { text-align: center; }
 
 h3 { color: #3a6ea5; }
 
-p { color: #535352; font-family: latolight; font-weight: normal; font-size: 1.2em; line-height: 1.5; }
+p { color: #535352; font-family: latoregular; font-weight: normal; font-size: 1.2em; line-height: 1.5; }
+p strong { font-family: latoregular; }
 
 .no-mobile { display: none; }
 
@@ -57,6 +58,8 @@ header { background: rgba(216, 216, 216, 0.95); overflow: hidden; position: fixe
 
 #intro { margin-top: 4.5em; background: url(../img/bg-intro-sm.jpg) center center no-repeat; background-size: cover; padding: 1em 0; }
 #intro h2, #intro p { color: white; }
+
+#beyond-technology { background: url(../img/bg-tek2-sm.jpg) center center no-repeat; }
 
 /* ========================================================================== Helper classes ========================================================================== */
 /* Image replacement */
@@ -82,22 +85,31 @@ header { background: rgba(216, 216, 216, 0.95); overflow: hidden; position: fixe
 /* For IE 6/7 only Include this rule to trigger hasLayout and contain floats. */
 /* ========================================================================== EXAMPLE Media Queries for Responsive Design. These examples override the primary ('mobile first') styles. Modify as content requires. ========================================================================== */
 @media only screen and (min-width: 42em) { /* Style adjustments for viewports that meet the condition */
-  .wrapper { max-width: 1020px; margin: 0 auto; overflow: hidden; }
+  .wrapper { max-width: 1020px; margin: 0 auto; overflow: hidden; position: relative; }
   h2 { font-size: 2.5em; }
   img { max-width: 100%; }
   .no-mobile { display: inherit; }
   .left { width: 50%; float: left; }
   .right { width: 50%; float: left; }
   header { background: white; }
+  #main-nav { max-height: none; position: absolute; top: 0; right: 0; }
+  #main-nav ul { float: right; }
+  #main-nav li { float: left; border: none; }
+  #main-nav li:first-child { border: none; }
   #trigger { display: none; }
   #intro { background: url(../img/bg-intro-lg.jpg) center center no-repeat; background-size: cover; padding: 3em; }
   #intro-screencaps { background: url(../img/screencaps-intro.png) center center no-repeat; background-size: contain; min-height: 30em; }
-  .trio { width: 25%; margin: 0 4.15%; float: left; }
+  #approach .wrapper { border-bottom: 1px solid rgba(136, 136, 136, 0.5); padding-bottom: 2em; }
+  .trio { width: 30%; margin: 0 1.65%; float: left; padding-top: 215px; text-align: center; }
   .trio h3 { font-size: 1.6em; text-align: center; text-transform: uppercase; }
-  .trio figure { width: 80%; margin: auto auto; background-size: contain; min-height: 12em; }
-  #platforms { background: url(../img/approach-1.jpg) center bottom no-repeat; }
-  #ecosystems { background: url(../img/approach-2.jpg) center bottom no-repeat; }
-  #data { background: url(../img/approach-3.jpg) center bottom no-repeat; } }
+  #platforms { background: url(../img/approach-1.jpg) center top no-repeat; }
+  #ecosystems { background: url(../img/approach-2.jpg) center 15px no-repeat; }
+  #data { background: url(../img/approach-3.jpg) center 3px no-repeat; }
+  #technology { min-height: 42em; background: url(../img/bg-tek1-lg.jpg) left bottom no-repeat; }
+  #technology .right { float: right; min-height: 35em; }
+  #technology figure { position: relative; top: 7em; left: 4em; }
+  #beyond-technology .background { overflow: hidden; margin: 0 auto; max-width: 1100px; background-image: url(../img/bg-tek2-lg.jpg); background-position: 50% 0; background-attachment: fixed; min-height: 35em; background-repeat: no-repeat; }
+  #beyond-technology h2 { color: white; } }
 @media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { /* Style adjustments for high resolution devices */ }
 /* ========================================================================== Print styles. Inlined to avoid required HTTP connection: h5bp.com/r ========================================================================== */
 @media print { * { background: transparent !important; color: black !important; /* Black prints faster: h5bp.com/s */ box-shadow: none !important; text-shadow: none !important; }
