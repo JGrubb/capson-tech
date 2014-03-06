@@ -59,7 +59,29 @@ header { background: rgba(216, 216, 216, 0.95); overflow: hidden; position: fixe
 #intro { margin-top: 4.5em; background: url(../img/bg-intro-sm.jpg) center center no-repeat; background-size: cover; padding: 1em 0; }
 #intro h2, #intro p { color: white; }
 
-#beyond-technology { background: url(../img/bg-tek2-sm.jpg) center center no-repeat; }
+.trio h3 { text-align: center; text-transform: uppercase; }
+
+#technology { padding-bottom: 2em; }
+#technology figure img { max-width: 100%; }
+
+#beyond-technology { padding: 2em 0; background: linear-gradient(to bottom, #333333, #aaaaaa, #666666, #777777, #333333); }
+#beyond-technology h2, #beyond-technology p { color: white; }
+
+#products { padding-bottom: 1em; }
+#products .wrapper { border-bottom: 2px solid #888888; }
+
+#careers h3 { font-size: 1.4em; text-transform: uppercase; color: #094a8e; }
+#careers ul { padding: 0; margin: 0; }
+#careers li { list-style: none; margin-bottom: 0.5em; }
+#careers a { color: #666666; }
+
+#contact { background: url(../img/bg-contact-sm.jpg) center center no-repeat; background-size: cover; padding: 1em 0; color: white; }
+#contact h2, #contact p, #contact a { color: white; font-family: latolight; }
+#contact h2 { margin-bottom: 0.5em; }
+#contact p { line-height: 1.8; }
+#contact p:last-child { margin-bottom: 0; }
+#contact .larger { font-size: 130%; }
+#contact strong { font-family: latoregular; }
 
 /* ========================================================================== Helper classes ========================================================================== */
 /* Image replacement */
@@ -91,8 +113,9 @@ header { background: rgba(216, 216, 216, 0.95); overflow: hidden; position: fixe
   .no-mobile { display: inherit; }
   .left { width: 50%; float: left; }
   .right { width: 50%; float: left; }
-  header { background: white; }
-  #main-nav { max-height: none; position: absolute; top: 0; right: 0; }
+  header { background: white; padding: 1em 0; }
+  #main-nav { max-height: none; position: absolute; top: 2em; right: 0; }
+  #main-nav a { color: #aaaaaa; text-transform: uppercase; padding: 1em; }
   #main-nav ul { float: right; }
   #main-nav li { float: left; border: none; }
   #main-nav li:first-child { border: none; }
@@ -101,15 +124,28 @@ header { background: rgba(216, 216, 216, 0.95); overflow: hidden; position: fixe
   #intro-screencaps { background: url(../img/screencaps-intro.png) center center no-repeat; background-size: contain; min-height: 30em; }
   #approach .wrapper { border-bottom: 1px solid rgba(136, 136, 136, 0.5); padding-bottom: 2em; }
   .trio { width: 30%; margin: 0 1.65%; float: left; padding-top: 215px; text-align: center; }
-  .trio h3 { font-size: 1.6em; text-align: center; text-transform: uppercase; }
+  .trio h3 { font-size: 1.6em; }
   #platforms { background: url(../img/approach-1.jpg) center top no-repeat; }
   #ecosystems { background: url(../img/approach-2.jpg) center 15px no-repeat; }
   #data { background: url(../img/approach-3.jpg) center 3px no-repeat; }
   #technology { min-height: 42em; background: url(../img/bg-tek1-lg.jpg) left bottom no-repeat; }
   #technology .right { float: right; min-height: 35em; }
   #technology figure { position: relative; top: 7em; left: 4em; }
+  #beyond-technology { background: none; }
+  #beyond-technology h2, #beyond-technology p { color: #666666; line-height: 1.6; }
+  #beyond-technology h2 { font-family: latolight; }
   #beyond-technology .background { overflow: hidden; margin: 0 auto; max-width: 1100px; background-image: url(../img/bg-tek2-lg.jpg); background-position: 50% 0; background-attachment: fixed; min-height: 35em; background-repeat: no-repeat; }
-  #beyond-technology h2 { color: white; } }
+  #beyond-technology h2 { color: white; }
+  #products .portal { clear: left; }
+  #products .portal p { width: 80%; margin: 0 auto; line-height: 1.5; color: #888888; }
+  #products h3 { font-size: 2em; text-transform: uppercase; margin: 0.5em 0; text-indent: 10%; color: #094a8e; }
+  #products .left { min-height: 25em; }
+  #products .left.first { background: url(../img/products-1.jpg) center top no-repeat; }
+  #products .left.last { background: url(../img/products-2.jpg) center top no-repeat; }
+  #careers .left { width: 55%; }
+  #careers .right { width: 45%; min-height: 675px; background: url(../img/bg-careers.jpg) right center no-repeat; }
+  #contact { min-height: 20em; background-image: url(../img/bg-contact.jpg); }
+  #contact .left p { width: 50%; } }
 @media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { /* Style adjustments for high resolution devices */ }
 /* ========================================================================== Print styles. Inlined to avoid required HTTP connection: h5bp.com/r ========================================================================== */
 @media print { * { background: transparent !important; color: black !important; /* Black prints faster: h5bp.com/s */ box-shadow: none !important; text-shadow: none !important; }

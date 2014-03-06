@@ -25,12 +25,17 @@
 
   header
     background: white
+    padding: 1em 0
 
   #main-nav
     max-height: none
     position: absolute
-    top: 0
+    top: 2em
     right: 0
+    a
+      color: #aaa
+      text-transform: uppercase
+      padding: 1em
     ul
       float: right
     li
@@ -64,8 +69,6 @@
     text-align: center
     h3
       font-size: 1.6em
-      text-align: center
-      text-transform: uppercase
 
   #platforms
     background: url(../img/approach-1.jpg) center top no-repeat
@@ -86,6 +89,12 @@
       left: 4em
   
   #beyond-technology
+    background: none
+    h2, p
+      color: #666
+      line-height: 1.6
+    h2
+      font-family: latolight
     .background
       overflow: hidden
       margin: 0 auto
@@ -98,3 +107,38 @@
       background-repeat: no-repeat
     h2
       color: white
+
+  #products
+    .portal
+      clear: left
+      p
+        width: 80%
+        margin: 0 auto
+        line-height: 1.5
+        color: #888
+    h3
+      font-size: 2em
+      text-transform: uppercase
+      margin: .5em 0
+      text-indent: 10%
+      color: $header
+    .left
+      min-height: 25em
+      &.first
+        background: url(../img/products-1.jpg) center top no-repeat
+      &.last
+        background: url(../img/products-2.jpg) center top no-repeat
+
+  #careers
+    .left
+      width: 55%
+    .right
+      width: 45%
+      min-height: 675px
+      background: url(../img/bg-careers.jpg) right center no-repeat
+
+  #contact
+    min-height: 20em
+    background-image: url(../img/bg-contact.jpg)
+    .left p
+      width: 50%
