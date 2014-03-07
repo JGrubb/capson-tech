@@ -10,4 +10,6 @@ $('#trigger').on('click', function(e) {
 smoothScroll.init();
 
 $.stellar({
+  horizontalOffset: 0,
+  horizontalScrolling: false
 });
