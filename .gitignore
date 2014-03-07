@@ -4,3 +4,4 @@ img
 *.DS_Store
 *.swp
 *.log
+node_modules
