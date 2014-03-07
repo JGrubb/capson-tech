@@ -86,15 +86,17 @@ h1, h2, h3 {
   line-height: 1.2; }
 
 h1 {
-  margin: 0 0.5em;
-  padding: 0.3em;
-  background: url(../img/logo.png) center center no-repeat;
-  background-size: contain;
-  max-width: 40%;
-  text-indent: 150%;
-  color: transparent;
-  height: 55px;
-  width: 225px; }
+  margin: 0.3em 0; }
+  h1 a {
+    display: inline-block;
+    margin: 0 0.5em;
+    background: url(../img/logo.png) center center no-repeat;
+    background-size: contain;
+    max-width: 40%;
+    text-indent: 150%;
+    color: transparent;
+    height: 55px;
+    width: 225px; }
 
 h2 {
   color: #094a8e;
@@ -377,15 +379,17 @@ header {
     background: url(../img/approach-3.jpg) center 3px no-repeat; }
 
   #technology {
-    min-height: 42em;
-    background: url(../img/bg-tek1-lg.jpg) left bottom no-repeat; }
+    min-height: 42em; }
+    #technology .wrapper {
+      background: url(../img/bg-tek1-lg.jpg) left bottom no-repeat; }
     #technology .right {
+      width: 40%;
       float: right;
       min-height: 35em; }
     #technology figure {
       position: relative;
-      top: 7em;
-      left: 4em; }
+      top: 6em;
+      left: 2.5em; }
 
   #beyond-technology {
     background: none; }
@@ -399,6 +403,7 @@ header {
       margin: 0 auto;
       background-image: url(../img/bg-tek2-lg.jpg);
       background-position: right center;
+      background-size: cover;
       min-height: 35em;
       background-repeat: no-repeat; }
     #beyond-technology h2 {
